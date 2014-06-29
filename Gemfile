@@ -2,8 +2,11 @@ source 'https://rubygems.org'
 
 gem 'mongoid', '~> 4', github: 'mongoid/mongoid'
 gem 'bson_ext'
+
 gem 'figaro'
+
 gem 'yelp'
+gem 'oauth'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

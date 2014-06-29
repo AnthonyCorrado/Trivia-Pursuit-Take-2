@@ -1,4 +1,5 @@
 require 'yelp'
+require 'oauth'
 
 Yelp.client.configure do |config|
   config.consumer_key = ENV['YELP_CONSUMER_KEY']

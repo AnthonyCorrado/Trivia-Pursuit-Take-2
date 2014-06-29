@@ -1,2 +1,28 @@
 <h1>Bars#index</h1>
 <p>Find me in app/views/bars/index.html.erb</p>
+
+<div class="form-div">
+    <%= form_tag(bars_path, :method => :get) do%>
+      <%= label_tag 'zipcode', "Zipcode:" %>
+      <%= text_field_tag 'zipcode' %>
+      <%= submit_tag 'Enter', :class => 'enter-btn' %>
+    <% end %>
+ </div>
+
+<h3>
+	<% if @all_bars %>
+		<% @all_bars.each do |b| %>
+		<%= b.name %>
+		<%= b.url %>
+		<%= b.location.display_address[0] %>
+		<%= b.location.display_address[2] %>
+		<% end %>
+	<% end %>
+
+
+
+
+
+</h3>
+
+
