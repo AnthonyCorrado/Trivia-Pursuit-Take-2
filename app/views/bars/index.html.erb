@@ -1,5 +1,29 @@
+
 <h1>Bars#index</h1>
 <p>Find me in app/views/bars/index.html.erb</p>
+
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+
+    <a class="left-off-canvas-toggle" href="#" >Menu</a>
+
+    <!-- Off Canvas Menu -->
+    <aside class="left-off-canvas-menu">
+        <!-- whatever you want goes here -->
+        <ul>
+          <li><a href="#">Item 1</a></li>
+        ...
+        </ul>
+    </aside>
+
+    <!-- main content goes here -->
+    <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
+
+  <!-- close the off-canvas menu -->
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
 
 <div class="form-div">
     <%= form_tag(bars_path, :method => :get) do%>
@@ -9,15 +33,19 @@
     <% end %>
  </div>
 
-<h3>
-	<% if @all_bars %>
-		<% @all_bars.each do |b| %>
-		<%= b.name %>
-		<%= b.url %>
-		<%= b.location.display_address[0] %>
-		<%= b.location.display_address[2] %>
-		<% end %>
+<div class="row"><% if @all_bars %><% @all_bars.each do |b| %><%= b.name %>
+  <div class="small-2 columns"><%= b.location.display_address[0] %></div>
+  <div class="small-10 columns"><%= b.location.display_address[2] %></div>
+  <div class="small-10 columns"><a href="<%= b.url %>">Yelp Page</a></div>
 	<% end %>
+	<% end %>
+	</div>
+<div class="row">
+  <div class="small-3 columns">3 columns</div>
+  <div class="small-9 columns">9 columns</div>
+</div>
+<h3>
+	
 
 
 
