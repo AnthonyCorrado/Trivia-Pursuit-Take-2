@@ -10,6 +10,8 @@ gem 'oauth'
 
 gem 'foundation-rails'
 gem 'foundation_rails_helper'
+
+gem 'rails_12factor'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
 # Use SCSS for stylesheets
