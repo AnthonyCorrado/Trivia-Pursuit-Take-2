@@ -2,8 +2,36 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-div {
-	border: 1px solid orange;
-	background-color: steelblue;
-	
+.main-container {
 }
+.row {
+	padding-top:5px;
+}
+div {
+	// border: 1px solid orange;
+	background-color: steelblue;	
+}
+.inline-button {
+	width: 100%;
+}
+.postfix {
+	background-color:red;
+}
+#inline-buttons {
+	width: 100%;
+	position:inline;
+}
+#zipcode {
+	position: inline;
+	width: 100%;
+	float:left;
+}
+#filter-button {
+	float:right;
+	background-color: rgb(200,200,200);
+	color: black;
+}
+#filter-bar {
+	background-color:gray;
+}
+

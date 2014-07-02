@@ -2,20 +2,14 @@
 <html>
 <head>
   <title>BarTriviaPursuit</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
-  <script src="/js/vendor/modernizr.js"></script>
 </head>
 <body>
 
 <%= yield %>
 
- <script src="/js/vendor/jquery.js"></script>
- <script src="/js/vendor/fastclick.js"></script>
- <script src="/js/foundation.min.js"></script>
- <script>
-  $(document).foundation();
-</script>
+
 </body>
 </html>

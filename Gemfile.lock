@@ -61,6 +61,9 @@ GEM
     foundation-rails (5.3.0.1)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
+    foundation_rails_helper (0.4)
+      actionpack (>= 3.0)
+      railties (>= 3.0)
     hike (1.2.3)
     i18n (0.6.10)
     jbuilder (2.1.1)
@@ -132,8 +135,6 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (2.2.2)
-      coffee-rails
     tzinfo (1.2.1)
       thread_safe (~> 0.1)
     uglifier (2.5.1)
@@ -152,6 +153,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   figaro
   foundation-rails
+  foundation_rails_helper
   jbuilder (~> 2.0)
   jquery-rails
   mongoid (~> 4)!
@@ -160,6 +162,5 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
-  turbolinks
   uglifier (>= 1.3.0)
   yelp
