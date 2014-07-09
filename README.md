@@ -1,4 +1,4 @@
-# Spending Your Days Searching for a Place to Drink and Think? 
+## Spending Your Days Searching for a Place to Drink and Think? 
 
 Your search ends here...eventually. Still a work in progress. This is a web app designed to locate all local bar trivia nights. You will be able to search via geolocation or through a multipurpose search field
 
