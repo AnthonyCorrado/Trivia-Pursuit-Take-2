@@ -6,7 +6,7 @@ This is version 2 of the hypothetical smash hit app, "Trivia Pursuit." This new 
 
 ## How it works
 
-Let Google use your GPS location, use the search field or have the NSA notify the app where you are currently at. Then, using Yelp's API, the app finds bars containing "trivia" in their reviews. Currently, the day and time fields have to be hardcoded. Super amazing nokogiri use is in the future, though.
+Let Google use your GPS location, use the search field or have the NSA notify the app where you are currently. Then, using Yelp's API, the app finds bars containing "trivia" in their reviews. As of now, the day and time fields have to be hardcoded. However, super amazing nokogiri use in the future should correct this
 
 ## What Makes it Tick
 * Ruby on Rails and some Javascript
